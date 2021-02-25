@@ -20,7 +20,7 @@ function About() {
                     <li>Making it "pop"</li>
                 </ul>
                 
-                
+
 
                 <h2>Part coder</h2>
                 <ul>
