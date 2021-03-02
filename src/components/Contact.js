@@ -12,9 +12,9 @@ function Contact() {
                 <a href src="">Connect on LinkedIn</a>
             </div>
             <div>
-                <input type="text">Your name</input>
-                <input type="text">Your email</input>
-                <input type="text">Your message</input>
+                <input type="text" placeholder= "Your name" />
+                <input type="text" placeholder= "Your email" />
+                <input type="text" placeholder= "Your message" />
                 <button className="Send">Send email</button>
             </div>
         </div>

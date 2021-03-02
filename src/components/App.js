@@ -1,23 +1,31 @@
-//import logo from './logo.svg';
-//import './App.css';
-
 import React from 'react';
-import HomeContainer from './components/HomeContainer';
-import About from './components/About';
-import Featured from './components/Featured';
-import Portfolio from './components/Portfolio';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
+import HomeContainer from './HomeContainer';
+import About from './About';
+import Featured from './Featured';
+import Portfolio from './Portfolio';
+import Blog from './Blog';
+import Contact from './Contact';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <HomeContainer />
-      <About />
+      <Route path = "/About">
+        <About />
+      </Route>
+      <Route path = "/Featured">
       <Featured />
+      </Route>
+      <Route path = "/Portfolio">
       <Portfolio />
+      </Route>
+      <Route path = "/Blog">
       <Blog />
+      </Route>
+      <Route path = "/Contact">
       <Contact />
+      </Route>
     </div>
   );
 }
