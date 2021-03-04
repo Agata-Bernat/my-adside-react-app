@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 
 function Contact() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    function sendData () {
+        console.log(name, email, message);
+    }
     return (
         <div>
             <div>
@@ -12,10 +20,10 @@ function Contact() {
                 <a href src="">Connect on LinkedIn</a>
             </div>
             <div>
-                <input type="text" placeholder= "Your name" />
-                <input type="text" placeholder= "Your email" />
-                <input type="text" placeholder= "Your message" />
-                <button className="Send">Send email</button>
+                <input type="text" placeholder= "Your name" onChange = {(e) => setName(e.target.value)} />
+                <input type="text" placeholder= "Your email" onChange = {(e) => setEmail(e.target.value)} />
+                <input type="text" placeholder= "Your message" onChange = {(e) => setMessage(e.target.value)} />
+                <button className="Send" onClick={sendData} >Send email</button>
             </div>
         </div>
     )
